@@ -6,8 +6,8 @@ export const dynamic = 'force-dynamic'
 export default function Home() {
   return (
     <main>
-      <MainPage/>
-      {/* <CardDetail/> */}
+      {/* <MainPage/>*/}
+      <CardDetail/>
     </main>
   )
 }
