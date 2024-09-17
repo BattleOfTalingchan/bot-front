@@ -1,4 +1,4 @@
-export default  function CardDetail() {
+export default  function Card() {
     return (
         
         <div className = "flex flex-col gap-10">
