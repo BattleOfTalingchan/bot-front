@@ -1,4 +1,4 @@
-import CardDetail from "./_components/Card"
+import CardDetail from "./_components/CardDetail"
 
 export const dynamic = 'force-dynamic'
 
