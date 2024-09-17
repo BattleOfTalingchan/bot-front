@@ -2,7 +2,7 @@ export default  function CardDetail() {
     return (
         
         <div className = "flex flex-col gap-10">
-            <div className="flex flex-col items-center w-full h-full">
+            <div className="flex flex-col items-center">
                 <div className="flex justify-center">
                     <h1 className="text-5xl font-bold pt-10">
                         Hello
