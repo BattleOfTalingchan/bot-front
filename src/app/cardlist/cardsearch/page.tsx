@@ -4,6 +4,6 @@ export const dynamic = 'force-dynamic'
 
 export default function CardSearchPage() {
   return (
-    <CardDetail/>
+    <div>CardSearchPage</div>
   )
 }

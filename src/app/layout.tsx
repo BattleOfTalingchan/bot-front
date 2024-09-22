@@ -1,5 +1,5 @@
-import type { Metadata } from 'next'
 import { Prompt, Sarabun } from 'next/font/google'
+import type { Metadata } from 'next'
 import './globals.css'
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     // <body className={inter.className}>{children}</body>
     // </html>
     <html lang="en">
-    <body className={`${prompt.className} ${sarabun.variable} min-h-screen`}>{children}</body>
+      <body className={`${prompt.className} ${sarabun.variable} min-h-screen`}>{children}</body>
     </html>
   )
 }
