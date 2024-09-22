@@ -1,28 +1,39 @@
-import Search from "../../../public/search.svg"
-import logo from "../../../public/logo.png"
+import Search from '../../../public/search.svg'
 
 export default function NavBar() {
   return (
-    <div className="bg-black h-28 top-0 left-0 right-0 z-50 content-center w-screen">
-        <nav className="text-white text-[20px] flex justify-between px-[60px]">
-          <div className="">
-            <a href=""><img src="https://cdn.discordapp.com/attachments/1285740112868806657/1285740186453409863/logo.png?ex=66eb5e5c&is=66ea0cdc&hm=700889531d6e020e5af92e685bf291b530e3732b28af6cecec72130838eecc7f&" alt="Logo" className="w-20"/></a>
-          </div>
-          <div className="content-center">
-            <div className="flex space-x-8 h-10">
-            <a href="" className="content-center">รายชื่อการ์ด</a>
-            <a href="" className="content-center">กฎกติกา</a>
-            <span className="gap-3 flex">
-              <input 
-                type="text" 
-                className="w-[180px] text-black px-2"
-                placeholder="ค้นหา"
-              />
-              <div className="w-[40px] h-[40px] bg-zinc-900 p-[5px]"><button><Search /></button></div>
+    <div className="left-0 right-0 top-0 z-50 h-28 w-screen content-center bg-black">
+      <nav className="flex justify-between px-[60px] text-[20px] text-white">
+        <div className="">
+          <a href="/">
+            <img
+              src="https://cdn.discordapp.com/attachments/1285740112868806657/1285740186453409863/logo.png?ex=66eb5e5c&is=66ea0cdc&hm=700889531d6e020e5af92e685bf291b530e3732b28af6cecec72130838eecc7f&"
+              alt="Logo"
+              className="w-[70px]"
+            />
+          </a>
+        </div>
+        <div className="content-center">
+          <div className="flex h-10 space-x-8">
+            <a href="/cardlist" className="content-center">
+              รายชื่อการ์ด
+            </a>
+            <a href="" className="content-center">
+              กฎกติกา
+            </a>
+            <span className="flex gap-3">
+              <form action="/cardlist/cardsearch" method="post">
+                <input type="text" className="w-[180px] px-2 text-black" placeholder="ค้นหา" />
+                <div className="h-[40px] w-[40px] bg-zinc-900 p-[5px]">
+                  <button>
+                    <Search />
+                  </button>
+                </div>
+              </form>
             </span>
           </div>
-          </div>
-        </nav>
+        </div>
+      </nav>
     </div>
   )
 }

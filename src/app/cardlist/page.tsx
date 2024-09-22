@@ -1,7 +1,12 @@
+import NavBar from '@/app/_components/NavBar'
+
 export const dynamic = 'force-dynamic'
 
 export default function CardListPage() {
   return (
-    <div>CardListPage</div>
+    <div>
+      <NavBar />
+      CardListPage
+    </div>
   )
 }

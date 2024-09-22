@@ -13,14 +13,8 @@
   },
   "ignorePatterns": ["**/gql", "next.config.js"],
   "rules": {
-    "semi": [
-      "error",
-      "never"
-    ],
-    "quote-props": [
-      "error",
-      "consistent-as-needed"
-    ],
+    "semi": ["error", "never"],
+    "quote-props": ["error", "consistent-as-needed"],
     "react/jsx-pascal-case": [
       "error",
       {
@@ -39,7 +33,8 @@
     "@typescript-eslint/no-unsafe-member-access": "off", // warn later
     "@typescript-eslint/no-unsafe-assignment": "off", // warn later
     "@typescript-eslint/no-misused-promises": [
-      "error", {
+      "error",
+      {
         "checksVoidReturn": {
           "attributes": false
         }
